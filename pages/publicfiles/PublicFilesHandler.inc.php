@@ -27,7 +27,7 @@ class PublicFilesHandler extends Handler {
 	}
 	
 	/**
-	 * Delete a file in the directory [files_dir]/publicuploads/[journalId] // FGr1
+	 * Delete a file in the directory [files_dir]/publicuploads/[journalId]
 	 * @param $args array
 	 * @param $request PKPRequest
 	 * @return bool
@@ -42,7 +42,7 @@ class PublicFilesHandler extends Handler {
 		
 		if(!$user) {
 			return false;
-		} else { // FGr1
+		} else {
 			import('plugins.generic.tinymce.TinyMCEPlugin');
 			$tinyMCEPlugin = new TinyMCEPlugin();
 			
@@ -65,7 +65,7 @@ class PublicFilesHandler extends Handler {
 
 
 	/**
-	 * Download a file in the directory [files_dir]/publicuploads/[journalId] // FGr1
+	 * Download a file in the directory [files_dir]/publicuploads/[journalId]
 	 * @param $args array
 	 * @return bool
 	 */
