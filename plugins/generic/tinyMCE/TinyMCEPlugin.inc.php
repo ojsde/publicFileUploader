@@ -360,7 +360,7 @@ class TinyMCEPlugin extends GenericPlugin {
 			
 			$sessionManager = SessionManager::getManager();
 			$userSession = $sessionManager->getUserSession();
-			$router = $request->getRouter(); // FGr1
+			$router = $request->getRouter();
 			$journal = $router->getContext($request);
 			
 			// initial state: display neither jbimages nor publicfileuploader button
@@ -372,7 +372,7 @@ class TinyMCEPlugin extends GenericPlugin {
 				$user = $userSession->getUser();
 				
 				if ($user) {
-					if ($this->publicUploadValidate($user->getId(), $journalId)) { // FGr1
+					if ($this->publicUploadValidate($user->getId(), $journalId)) {
 						// user is logged in and is permitted to upload public files: display jbimages and publicfileuploader buttons
 						$uploadButtons = ',jbimages,publicfileuploader",';
 					} else {
@@ -456,7 +456,7 @@ class TinyMCEPlugin extends GenericPlugin {
 	 * @param $userId int, $journalId int
 	 * @return boolean
 	 */
-	function publicUploadValidate($userId, $journalId) { // FGr1
+	function publicUploadValidate($userId, $journalId) {
 		import('classes.security.RoleDAO');
 		$roleDao = DAORegistry::getDAO('RoleDAO');
 		$roles = $roleDao->getRolesByUserId($userId, $journalId);
