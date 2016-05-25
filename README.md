@@ -72,6 +72,7 @@ Metrics
 Settings
 --------
 - config.inc.php, section [files]
+
 		public_files_max_size (default: 20MB)
 
 Plugin category
