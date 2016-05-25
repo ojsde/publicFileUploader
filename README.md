@@ -63,7 +63,7 @@ Classes, plugins, external software
 	
 - file upload: yes
 
-	directory: [files_dir]/publicuploads/[journalID]
+		directory: [files_dir]/publicuploads/[journalID]
  
 Metrics
 --------
@@ -82,6 +82,6 @@ Other
 - does using the plugin require special (background)-knowledge?: no
 - access restrictions: yes
 
-	in order to upload files, the user has to be logged in and has to be (at least) the role proof reader
+		in order to upload files, the user has to be logged in and has to be (at least) the role proof reader
 
 
