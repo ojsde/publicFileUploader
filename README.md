@@ -83,6 +83,6 @@ Other
 - does using the plugin require special (background)-knowledge?: no
 - access restrictions: yes
 
-		in order to upload files, the user has to be logged in and has to be (at least) the role proof reader
+		in order to manage files with this plugin, the user has to be logged in with a role other than subscription manager, reader and author
 
 
