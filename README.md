@@ -44,20 +44,19 @@ Database access, server access
  
 Classes, plugins, external software
 -----------------------
-- OJS classes used (php): 3
+- OJS classes used (php): 5
 	
 		classes.handler.Handler
 		plugins.generic.tinymce.TinyMCEPlugin
 		lib.pkp.classes.file.FileManager
+		plugins.generic.customBlockManager.CustomBlockEditForm
+		plugins.generic.staticPages.StaticPagesSettingsForm
 
 - necessary plugins: 1
 
 		TinyMCE Plugin
 		
-- optional plugins: 2
-		
-		Custom Block Manager
-		Static Pages Plugin
+- optional plugins: 0
 		
 - use of external software: no
 	
